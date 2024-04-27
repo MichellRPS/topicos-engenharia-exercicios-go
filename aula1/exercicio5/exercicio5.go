@@ -4,12 +4,12 @@ import "fmt"
 
 func main() {
 	a := [10]int{43, 67, 125, 96, 78, 104, 45, 99, 81, 55}
-	// cria um mapa vazio com chave e valor do tipo int
+	// creates an empty map with key and value of type int
 	m := map[int]int{}
 
-	// percorre a lista de inteiros
+	// loops through the array
 	for i, v := range a {
-		// coloca o índice e o valor atuais da lista como chave e valor no mapa, respectivamente
+		// assigns the current index and and value of the array to a key and value in the map, respectively
 		m[i] = v
 	}
 
