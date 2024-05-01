@@ -17,16 +17,17 @@ func main() {
 	l1 := [10]int{43, 67, 125, 96, 78, 104, 45, 99, 81, 55}
 	l2 := [10]int{11, 29, 52, 47, 30, 0, 18, 66, 2, 88}
 
-	for i := 0; i < 10; i++ {
+	for i := 0; i < len(l1); i++ {
 		q, e := divide(l1[i], l2[i])
 
 		if e != nil {
 			fmt.Println(e)
-			fmt.Printf("%d / %d \n", l1[i], l2[i])
+			// fmt.Printf("%d / %d \n", l1[i], l2[i])
+			fmt.Println(l1[i], "/", l2[i], "=", q)
 			continue
 		}
 
-		fmt.Printf("%d / %d = %d \n", l1[i], l2[i], q)
+		fmt.Println(l1[i], "/", l2[i], "=", q)
 	}
 
 	/*

@@ -12,13 +12,8 @@ func countString(s string) (int, error) {
 		return 0, errors.New("empty string")
 	}
 
-	// converts the string to a rune array containing all the characters of the string
-	r := []rune(s)
-	// gets the length of the rune array
-	l := len(r)
-
 	// returns the length of the string
-	return l, nil
+	return len(s), nil
 
 	/*
 		references:
